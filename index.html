@@ -3,6 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <script>
+        window.onload = function() {
+            var password = prompt("Please enter the password:");
+
+            if (password !== "kemfamily") {
+                alert("Incorrect password. Access denied.");
+                window.location.href = "about:blank"; // Redirect to a blank page
+            }
+        };
+    </script>
+</head>
+<body>
+
+<h1>Welcome to the Password Protected Page</h1>
+<p>This page requires a password to access.</p>
+
     <title>Dustin's Website</title>
     <style>
         body {
